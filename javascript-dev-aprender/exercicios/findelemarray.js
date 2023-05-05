@@ -1,3 +1,4 @@
+//encontrando elementos na array(primitivos)
 const numeros= [1,4,2,3,4];
 console.log(numeros.indexOf(2));
 console.log(numeros.lastIndexOf(4));
