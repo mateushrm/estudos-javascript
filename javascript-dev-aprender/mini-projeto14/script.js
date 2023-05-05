@@ -22,4 +22,20 @@ let faixas2 = [
     criarFaixas('De R$700 a R$1000', 700, 1000),
     criarFaixas('R$1000 ou mais', 1000, 1000000)
 ]
+
 console.log(faixas,faixas2);
+
+//É possível fazer com o constructor function também
+function Faixas(tooltip, minimo, maximo){
+    this.tooltip = tooltip,
+    this.minimo = minimo,
+    this.maximo = maximo
+}
+
+let faixas3 = [
+    new Faixas('Até R$700', 0, 700),
+    new Faixas('De R$700 a R$1000', 700, 1000),
+    new Faixas('R$1000 ou mais', 1000, 1000000)
+]
+
+console.log(faixas3);
